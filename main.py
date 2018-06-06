@@ -52,7 +52,7 @@ def getequity():
         c.append([a[i]+'\\n'+b[i]])
     dtf = pd.DataFrame({'Company details':c})
     pd.set_option('display.max_colwidth', -4)
-    HTML_file = open("http://127.0.0.1/templates/displaypage.html","w")
+    HTML_file = open("https://pythonbse.azurewebsites.net/templates/displaypage.html","w")
     HTML_file.write(''' <html> <head> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script> 
     <script>
     $(function() {
@@ -847,5 +847,5 @@ button[type=button] {
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="https://pythonbse.azurewebsites.net")
     #app.run(host='192.168.3.145')
