@@ -6,7 +6,6 @@ from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS, cross_origin
 import json
 import urllib.request
-# from IPython.display import display, HTML
 
 dtf = pd.DataFrame()
 app = Flask(__name__)
@@ -847,5 +846,5 @@ button[type=button] {
 
 
 if __name__ == '__main__':
-    app.run(host="https://pythonbse.azurewebsites.net")
+    app.run()
     #app.run(host='192.168.3.145')
